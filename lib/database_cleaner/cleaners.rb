@@ -34,7 +34,6 @@ module DatabaseCleaner
 
     def strategy=(strategy)
       values.each { |cleaner| cleaner.strategy = strategy }
-      remove_duplicates
     end
 
     def start
